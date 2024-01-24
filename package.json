@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:chrome:headed": "cypress run --headed --browser chrome",
+    "test:chrome:headless": "cypress run --headless --browser chrome",
+    "test:firefox:headed": "cypress run --headed --browser firefox",
+    "test:firefox:headless": "cypress run --headless --browser firefox",
+    "test:mobile:chrome:headed": "cypress run --config-file mobile.config.js --headed --browser chrome",
+    "test:mobile:chrome:headless": "cypress run --config-file mobile.config.js --headless --browser chrome"
   },
   "author": "",
   "license": "ISC",
